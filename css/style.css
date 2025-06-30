@@ -1,0 +1,115 @@
+style
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+    background: #000 url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpR4IoPFRs0A3uND4MQbY_0iWjIn-u4MnSCA&s') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+  }
+
+  form {
+    background: rgba(17, 17, 17, 0.9);
+    border: 3px solid #e63946;
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 25px rgba(230, 57, 70, 0.6);
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+  }
+
+  .form-group {
+    margin-bottom: 25px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #e63946;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-shadow: 0 0 5px rgba(230, 57, 70, 0.5);
+  }
+
+  input[type="text"],
+  input[type="password"],
+  textarea {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #0057b8;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s;
+  }
+
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #e63946;
+    box-shadow: 0 0 15px rgba(230, 57, 70, 0.7);
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 140px;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(45deg, #e63946, #0057b8);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+  }
+
+  input[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(230, 57, 70, 0.8);
+    background: linear-gradient(45deg, #ff0018, #0077ff);
+  }
+
+  .spider-logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .spider-logo img {
+    width: 80px;
+    filter: drop-shadow(0 0 10px rgba(230, 57, 70, 0.7));
+  }
